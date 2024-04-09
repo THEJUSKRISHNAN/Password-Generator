@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-[#D1D1D1] flex justify-center">
-    <div class="bg-white  w-3/5 h-5/6 rounded-2xl mt-[5rem]  md:mt-[10rem]">
+    <div class="bg-white  w-3/5 h-5/6 rounded-2xl mt-[2rem]  md:mt-[10rem]">
         <div class="grid justify-center px-4 sm:px-[3rem] lg:px-0">
             <h1 class=" font-bold text-4xl mt-3 text-center">Password Generator</h1>
             <span class="relative">
@@ -21,15 +21,16 @@
             <p class="mt-4 text-lg text-center">Select thte length of your Password using the slidebar.Password
                 lenght(6-25).
             </p>
-            <span class="flex justify-center align-middle mt-4 text-lg font-medium flex-col gap-3 md:flex-row md:gap-0 text-center">
+            <span
+                class="flex justify-center align-middle mt-4 text-lg font-medium flex-col gap-3 md:flex-row md:gap-0 text-center">
                 <span>Total Characters:</span>
                 <span>
-                    <input type="range" id="rangeInput" min="6" max="25" value="6" class="w-5/12 ml-3 hover:cursor-pointer"
-                    oninput="rangeValue.value=this.value">
-                <input type="number" id="rangeValue" min="6" max="25" value="6" class="ml-3"
-                    oninput="rangeInput.value=this.value">
+                    <input type="range" id="rangeInput" min="6" max="25" value="6"
+                        class="w-5/12 ml-3 hover:cursor-pointer" oninput="rangeValue.value=this.value">
+                    <input type="number" id="rangeValue" min="6" max="25" value="6" class="ml-3"
+                        oninput="rangeInput.value=this.value">
                 </span>
-                
+
 
             </span>
 
