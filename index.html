@@ -10,15 +10,15 @@
 </head>
 
 <body class="bg-[#D1D1D1] flex justify-center">
-    <div class="bg-white  w-[50rem] h-[25rem] mt-[10rem] rounded-2xl">
-        <div class="grid justify-center ">
+    <div class="bg-white  w-3/5 h-5/6 mt-[10rem] rounded-2xl">
+        <div class="grid justify-center sm:px-[3rem] lg:px-0">
             <h1 class=" font-bold text-4xl mt-3 text-center">Password Generator</h1>
-            <span>
+            <span class="relative">
                 <input type="text"
-                    class="passwordInput mt-4 w-[40rem] justify-center h-16 rounded-xl border pl-4 text-2xl font-semibold border-black ">
-                <i class="copybtn fa-regular fa-copy relative right-10 text-2xl hover:cursor-pointer"></i>
+                    class="passwordInput mt-4 w-full justify-center h-16 rounded-xl border pl-4 text-2xl font-semibold border-black">
+                <i class="copybtn fa-regular fa-copy   text-2xl hover:cursor-pointer absolute top-8 right-5"></i>
             </span>
-            <p class="mt-4 text-lg text-center">Select thte lenght of your Password using the slidebar.Password
+            <p class="mt-4 text-lg text-center">Select thte length of your Password using the slidebar.Password
                 lenght(6-25).
             </p>
             <span class="flex justify-center align-middle mt-4 text-lg font-medium">
@@ -30,7 +30,7 @@
 
             </span>
 
-            <div class="grid grid-cols-2 mt-4 gap-3 text-lg font-medium">
+            <div class="grid  mt-4 gap-3 text-lg font-medium sm:grid-cols-1 lg:grid-cols-2">
 
                 <span>
                     <input type="checkbox" name="" id="numbers"
@@ -59,7 +59,7 @@
 
             </div>
             <button
-                class="mt-4 bg-[#8DB38B] p-3 rounded-full font-bold shadow-sm shadow-[#8DB38B] generate-password">GENERATE
+                class="mt-4 mb-7 bg-[#8DB38B] p-3 rounded-full font-bold shadow-sm shadow-[#8DB38B] generate-password">GENERATE
                 PASSWORD</button>
 
         </div>
