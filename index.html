@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-[#D1D1D1] flex justify-center">
+    <div class="bg-white  w-[50rem] h-[25rem] mt-[10rem] rounded-2xl">
+        <div class="grid justify-center ">
+            <h1 class=" font-bold text-4xl mt-3 text-center">Password Generator</h1>
+            <span>
+                <input type="text"
+                    class="passwordInput mt-4 w-[40rem] justify-center h-16 rounded-xl border pl-4 text-2xl font-semibold border-black ">
+                <i class="copybtn fa-regular fa-copy relative right-10 text-2xl hover:cursor-pointer"></i>
+            </span>
+            <p class="mt-4 text-lg text-center">Select thte lenght of your Password using the slidebar.Password
+                lenght(6-25).
+            </p>
+            <span class="flex justify-center align-middle mt-4 text-lg font-medium">
+                <span>Total Characters:</span>
+                <input type="range" id="rangeInput" min="6" max="25" value="6" class="w-5/12 ml-3 hover:cursor-pointer"
+                    oninput="rangeValue.value=this.value">
+                <input type="number" id="rangeValue" min="6" max="25" value="6" class="ml-3"
+                    oninput="rangeInput.value=this.value">
+
+            </span>
+
+            <div class="grid grid-cols-2 mt-4 gap-3 text-lg font-medium">
+
+                <span>
+                    <input type="checkbox" name="" id="numbers"
+                        class="w-4 h-4 relative top-[2px] hover:cursor-pointer options">
+                    <label for="Numbers">Include Numbers</label>
+
+                </span>
+
+                <span>
+                    <input type="checkbox" name="" id="loverCase"
+                        class="w-4 h-4 relative top-[2px] hover:cursor-pointer options">
+                    <label for="Letters">Include Letters</label>
+                </span>
+
+                <span>
+                    <input type="checkbox" name="" id="upperCase"
+                        class="w-4 h-4 relative top-[2px] hover:cursor-pointer options">
+                    <label for="MixedCase">Include Mixed Case</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="" id="specialCharacters"
+                        class="w-4 h-4 relative top-[2px] hover:cursor-pointer options">
+                    <label for="SpecialCharacters">Include Special Characters</label>
+                </span>
+
+
+            </div>
+            <button
+                class="mt-4 bg-[#8DB38B] p-3 rounded-full font-bold shadow-sm shadow-[#8DB38B] generate-password">GENERATE
+                PASSWORD</button>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
