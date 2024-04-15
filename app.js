@@ -6,7 +6,7 @@ let rangeValue = document.querySelector("#rangeValue");
 let options = document.querySelectorAll(".options");
 
 const characters = {
-  upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  upperCase: "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz",
   loverCase: "abcdefghijklmnopqrstuvwxyz",
   numbers: "0123456789",
   specialCharacters: "#$&~`!@^()_-+{}[]<>?*",
